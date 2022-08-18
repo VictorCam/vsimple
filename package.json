@@ -1,0 +1,28 @@
+{
+    "name": "starter",
+    "type": "module",
+    "scripts": {
+        "build": "vite build --mode=production",
+        "preview": "vite preview --host",
+        "dev": "vite --host",
+        "vite-tauri": "vite-tauri"
+    },
+    "devDependencies": {
+        "@roxi/routify": "3.0.0-next.106",
+        "@sveltejs/vite-plugin-svelte": "^1.0.1",
+        "@tauri-apps/cli": "^1.0.5",
+        "autoprefixer": "^10.4.8",
+        "dotenv": "^16.0.1",
+        "postcss": "^8.4.16",
+        "svelte": "^3.49.0",
+        "unplugin-auto-import": "^0.11.2",
+        "vite": "^3.0.8",
+        "vite-plugin-tauri": "^2.2.0"
+    },
+    "dependencies": {
+        "axios": "^0.27.2",
+        "dayjs": "^1.11.5",
+        "js-cookie": "^3.0.1",
+        "normalize.css": "^8.0.1"
+    }
+}

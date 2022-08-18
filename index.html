@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="icon" type="image/svg+xml" href=".//src/assets/vite.svg" />
+
+        <title>Svelte App</title>
+
+        <!-- CSS Reset -->
+        <link rel="stylesheet" href="./node_modules/normalize.css" />
+
+        <!-- Parent Style (0 margin/padding + responsive font-size + force 0 margin on h1) -->
+        <style>
+            :root {
+                font-size: 6.25%;
+                background: rgb(40, 40, 40);
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            body {
+                font-size: 16rem;
+            }
+
+            h1 {
+                margin: 0!important;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+
+        <script type="module">
+            import App from './src/App.svelte'
+            const app = new App({ target: document.body })
+            export default app
+        </script>
+    </head>
+    <body></body>
+</html>
