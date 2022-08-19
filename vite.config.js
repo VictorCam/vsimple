@@ -1,5 +1,4 @@
 import { svelte } from '@sveltejs/vite-plugin-svelte'
-import routify from '@roxi/routify/vite-plugin'
 import { defineConfig } from 'vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import AutoPrefixer from 'autoprefixer'
@@ -10,9 +9,6 @@ export default defineConfig({
     clearScreen: false,
 
     plugins: [
-        routify({
-            devHelper: !production
-        }),
         AutoImport({
             imports: [
                 {
