@@ -8,7 +8,7 @@
         "vite-tauri": "vite-tauri"
     },
     "devDependencies": {
-        "@roxi/routify": "3.0.0-next.106",
+        "@roxi/routify": "^2.18.8",
         "@sveltejs/vite-plugin-svelte": "^1.0.1",
         "@tauri-apps/cli": "^1.0.5",
         "autoprefixer": "^10.4.8",
@@ -16,7 +16,7 @@
         "postcss": "^8.4.16",
         "svelte": "^3.49.0",
         "unplugin-auto-import": "^0.11.2",
-        "vite": "^3.0.8",
+        "vite": "^3.0.9",
         "vite-plugin-tauri": "^2.2.0"
     },
     "dependencies": {
