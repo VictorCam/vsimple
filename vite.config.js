@@ -6,8 +6,6 @@ import AutoPrefixer from 'autoprefixer'
 const production = process.env.NODE_ENV === 'production'
 
 export default defineConfig({
-    clearScreen: false,
-
     plugins: [
         AutoImport({
             imports: [
@@ -28,7 +26,7 @@ export default defineConfig({
             emitCss: false,
             compilerOptions: {
                 dev: !production,
-            }
+            },
         }),
     ],
     css: {
@@ -36,5 +34,7 @@ export default defineConfig({
             plugins: [AutoPrefixer()]
         }
     },
-    server: { port: 2020 },
+    server: { 
+        port: 2020,
+    }
 })

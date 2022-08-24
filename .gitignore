@@ -2,3 +2,4 @@ node_modules
 dist
 .env
 .routify
+pnpm-lock.yaml
