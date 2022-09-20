@@ -1,7 +1,7 @@
 import { svelte } from '@sveltejs/vite-plugin-svelte'
 import { defineConfig } from 'vite'
 import AutoImport from 'unplugin-auto-import/vite'
-import AutoPrefixer from 'autoprefixer'
+import postcssPresetEnv from 'postcss-preset-env'
 
 const production = process.env.NODE_ENV === 'production'
 
@@ -22,16 +22,11 @@ export default defineConfig({
                 }
             ]
         }),
-        svelte({
-            emitCss: false,
-            compilerOptions: {
-                dev: !production,
-            },
-        }),
+        svelte(),
     ],
     css: {
         postcss: {
-            plugins: [AutoPrefixer()]
+            plugins: [postcssPresetEnv({stage: 2})]
         }
     },
     server: { 
